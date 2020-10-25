@@ -4,12 +4,15 @@ const btn = document.getElementById('submit');
 
 btn.addEventListener('click', (e)=>{
 
+    e.preventDefault();
     const heightVal = height.value;
     const weightVal = weight.value;
 
     let pound = 2.20462 * weightVal;
+    let ounce = (pound/3) * 2;
+    let liter = ounce * 0.0295735;
 
-    console.log("pound");
+    console.log(Math.round(liter));
     
 
 });
