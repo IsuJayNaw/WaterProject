@@ -15,7 +15,7 @@ btn.addEventListener('click', (e)=>{
     let liter = Math.round(ounce * 0.0295735);
 
     //content.style.display = "none";
-    const html = `<div class="card text-white bg-primary mb-3 mx-auto" id ="result">
+    const html = `<div class="card text-white bg-info mb-3 mx-auto" id ="result">
                     <div class="result"> You should drink ${liter} Liter </div>
                   </div>`
     result.innerHTML = html;
