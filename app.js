@@ -10,9 +10,8 @@ btn.addEventListener('click', (e)=>{
 
     let pound = 2.20462 * weightVal;
     let ounce = (pound/3) * 2;
-    let liter = ounce * 0.0295735;
+    let liter = Math.round(ounce * 0.0295735);
 
-    console.log(Math.round(liter));
-    
+   
 
 });
