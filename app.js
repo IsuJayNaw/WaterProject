@@ -24,10 +24,11 @@ btn.addEventListener('click', (e)=>{
 
         const html = `
         <div class="col-8 mx-auto">
-            <div class="card">
+            <div class="card bg-light">
                 <div class="card-body text-center">
-                    <h3 class="card-title">You should drink</h3>
-                    <h3 class="card-title">${liter} liter</h3>
+                    <h3 class="title">You should drink</h3>
+                    <h2 class="card-title text-info">${liter} liter</h2>
+                    <h3 class="title">Per Day</h3>
                 </div>
             </div>
         </div>
