@@ -4,6 +4,7 @@ const btn = document.getElementById('submit');
 const content = document.getElementById('content');
 const result = document.getElementById('result');
 const alertBox= document.querySelector('.alert');
+const loder = document.querySelector('.loding');
 
 btn.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -19,10 +20,31 @@ btn.addEventListener('click', (e)=>{
         let liter = Math.round(ounce * 0.0295735);
     
         //content.style.display = "none";
-        const html = `<div class="card text-white bg-info mb-3 mx-auto" id ="result">
-                        <div class="result"> You should drink ${liter} Liter </div>
-                      </div>`
-        result.innerHTML = html;
+        content.classList.add('d-none');
+
+        const html = `
+        <div class="col-8 mx-auto">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h3 class="card-title">You should drink</h3>
+                    <h3 class="card-title">${liter} liter</h3>
+                </div>
+            </div>
+        </div>
+        `;
+
+        loder.classList.remove('d-none');
+
+        setTimeout(()=>{
+
+            result.innerHTML = html;
+
+        },6000);
+       
+
+
+       
+        
       
     }else{
 

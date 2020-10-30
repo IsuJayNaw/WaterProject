@@ -15,9 +15,9 @@
         <a class="navbar-brand text-white" href="#">Water App</a>
     </nav>
 
-    <div class="container">
+    <div class="container"  id="content">
         <div class="row">
-            <div class="col-10 mx-auto" id="content"> 
+            <div class="col-10 mx-auto"> 
                 <div class="alert  alert-dismissible fade show my-5" role="alert">
                   
                 </div>
@@ -43,16 +43,22 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="card mx-auto" id = "result">
-               
+        <div class="row my-5 d-flex justify-content-center" id="result">
+            
+            <div class="loding text-primary d-none" role="status" style="width:80vh">
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jUaIOT.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
             </div>
+            
+
         </div>
     </div>
 
-    <nav class="navbar navbar-light bg-dark">
+    
+
+
+    <!--<nav class="navbar navbar-light bg-dark">
         <a class="navbar-brand text-white" href="#">This is Footer</a>
-    </nav>
+    </nav>-->
 
 
 
