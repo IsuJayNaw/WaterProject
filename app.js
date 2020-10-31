@@ -26,6 +26,7 @@ btn.addEventListener('click', (e)=>{
         <div class="col-8 mx-auto">
             <div class="card bg-light">
                 <div class="card-body text-center">
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9AGgPs.json"  background="transparent" class= "mx-auto" speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
                     <h3 class="title">You should drink</h3>
                     <h2 class="card-title text-info">${liter} liter</h2>
                     <h3 class="title">Per Day</h3>
@@ -40,7 +41,7 @@ btn.addEventListener('click', (e)=>{
 
             result.innerHTML = html;
 
-        },6000);
+        },5000);
        
 
 
